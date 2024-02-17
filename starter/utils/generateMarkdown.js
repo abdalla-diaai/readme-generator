@@ -14,25 +14,25 @@ function generateMarkdown(data) {
   return `# ${data.title} ${licenseIcons[data.license]}
   
   ## Contents
-  * [Description](#Description).
-  * [Installation](#Installation).
-  * [Usage](#Usage).
-  * [License](#License).
-  * [Contribution](#Contribution).
-  * [Questions](#Questions).
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Contribution](#Contribution)
+  * [Questions](#Questions)
 
   ## Description 
-  ${data.description}.
+  ${data.description}
   ## Installation
-  ${data.installation}.
+  ${data.installation}
   ## Usage
-  ${data.usage}.
+  ${data.usage}
   ## License
-  ${data.license}.
+  ${data.license}
   ## Contribution
-  ${data.contribution}.
+  ${data.contribution}
   ## Questions
-  [Link to GitHub](${data.questions}).
+  [Link to GitHub](${data.questions})
   `;
 }
 
