@@ -16,7 +16,7 @@ Simply download the git repository from this [LINK](https://github.com/abdalla-d
 
 ### Possible Issues
 
-Links to internal sections works only in normal mode not preview mode.
+Links to internal sections works only in normal mode not preview mode when viewed in VScode but works normally in GitHub.
 
 ## Credit
 
