@@ -7,19 +7,23 @@ const licenseIcons = {
     'MPL-2.0': '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
     'LGPL': '[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)',
     'EPL-1.0': '(https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
-    'Artistic-2.0': '[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)' 
+    'Artistic-2.0': '[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)'
 }
 
 function generateMarkdown(data) {
-  return `# ${data.title} ${licenseIcons[data.license]}
+    let license;
+    if ((data.license in licenseIcons)) {
+        license = licenseIcons[data.license];
+    }
+    return `# ${data.title} ${license}
   
-  ## Contents
+  ## Table of Contents
   * [Description](#Description)
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [License](#License)
-  * [Contribution](#Contribution)
-  * [Questions](#Questions)
+  * [Contribution](#Contributing)
+  * [Questions](#questions)
 
   ## Description 
   ${data.description}
@@ -33,11 +37,12 @@ function generateMarkdown(data) {
   ## License
   ${data.license}
 
-  ## Contribution
-  ${data.contribution}
+  ## Contributing
+  ${data.contributing}
   
   ## Questions
-  [Link to GitHub](${data.questions})
+  [GitHub](https://github.com/${data.github})
+  [Contact](mailto:${data.email})
   `;
 }
 

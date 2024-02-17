@@ -8,7 +8,7 @@ const questions = [
     {
         type: 'input',
         name: 'welcome',
-        message: 'Greetings to the Automated README Generator! You will encounter a series of prompts to input information such as project title, description, installation instructions, usage details, contributors, license, testing procedures, and lastly, the GitHub Repository Link. Simply press Enter to proceed...',
+        message: 'Greetings to the Automated README Generator! You will encounter a series of prompts to input information such as project title, description, installation instructions, usage details, contributing, license, testing procedures, and lastly, questions section with GitHub Repository Link and contact email. Press Enter to proceed...',
     },
     {
         type: 'input',
@@ -34,12 +34,12 @@ const questions = [
         type: 'checkbox',
         message: 'Choose License: ',
         name: 'license',
-        choices: ['MIT', 'GPL', 'Apache-2.0', '0BSD', 'MPL-2.0', 'LGPL', 'EPL-2.0', 'Artistic-2.0']
-      },
+        choices: ['MIT', 'GPL', 'Apache-2.0', '0BSD', 'MPL-2.0', 'LGPL', 'EPL-2.0', 'Artistic-2.0', 'Other']
+    },
     {
         type: 'input',
-        name: 'contribution',
-        message: 'Contributors: ',
+        name: 'contributing',
+        message: 'Contributing: ',
     },
     {
         type: 'input',
@@ -48,28 +48,34 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'GitHub Repository Link: ',
+        name: 'github',
+        message: 'GitHub Username: '
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Email: '
+        
     },
 ];
-   
+
 
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    // TODO: Describe how this ternary operator works
-    err ? console.error(err) : console.log('File created!')
-);
+        // TODO: Describe how this ternary operator works
+        err ? console.error(err) : console.log('File created!')
+    );
 };
 
 // function to initialize program
 function init() {
     inquirer
-    .prompt(questions)
-    .then((data) => {
-        const makeMD = generateMarkdown(data)
-        writeToFile('exampleREADME.md', makeMD )
-    });
+        .prompt(questions)
+        .then((data) => {
+            const makeMD = generateMarkdown(data)
+            writeToFile('exampleREADME.md', makeMD)
+        });
 }
 
 // function call to initialize program
