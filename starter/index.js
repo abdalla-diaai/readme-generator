@@ -31,43 +31,43 @@ function init() {
         {
             type: 'input',
             name: 'title',
-            message: 'What is the title of the project?',
+            message: questions[0],
         },
         {
             type: 'input',
             name: 'description',
-            message: 'What is the Description of the project?',
+            message:  questions[1],
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'How to install the project?'
+            message:  questions[2]
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'How to use the project?',
+            message:  questions[3],
         },
         {
             type: 'checkbox',
-            message: 'What kind of licence to use?',
+            message:  questions[4],
             name: 'license',
             choices: ['MIT', 'GPL', 'Apache-2.0', '0BSD', 'MPL-2.0', 'LGPL', 'EPL-2.0', 'Artistic-2.0']
           },
         {
             type: 'input',
             name: 'contribution',
-            message: 'Are there any contributors?',
+            message:  questions[5],
         },
         {
             type: 'input',
             name: 'test',
-            message: 'Are there any tests?',
+            message:  questions[6],
         },
         {
             type: 'input',
             name: 'questions',
-            message: 'Get in touch?',
+            message:  questions[7],
         },
     ])
     .then((data) => {
