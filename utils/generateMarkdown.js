@@ -41,8 +41,9 @@ function generateMarkdown(data) {
   ${data.contributing}
   
   ## Questions
-  [GitHub](https://github.com/${data.github})
-  [Contact](mailto:${data.email})
+  [GitHub Profile](https://github.com/${data.github})
+
+  [Contact Email](mailto:${data.email})
   `;
 }
 
