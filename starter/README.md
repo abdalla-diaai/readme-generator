@@ -13,7 +13,6 @@ The application will be invoked by using the following command:
 ```bash
 node index.js
 ```
-[review](#review).
 ## User Story
 
 * As a developer, I want a README generator so that I can quickly create a professional README for a new project

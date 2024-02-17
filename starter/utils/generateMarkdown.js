@@ -12,8 +12,15 @@ const licenseIcons = {
 
 function generateMarkdown(data) {
   return `# ${data.title} ${licenseIcons[data.license]}
-  ## Contents:
-  1. [Hey](#Questions).
+  
+  ## Contents
+  * [Description](#Description).
+  * [Installation](#Installation).
+  * [Usage](#Usage).
+  * [License](#License).
+  * [Contribution](#Contribution).
+  * [Questions](#Questions).
+
   ## Description 
   ${data.description}.
   ## Installation
