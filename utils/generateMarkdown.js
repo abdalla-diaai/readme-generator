@@ -14,10 +14,10 @@ function generateMarkdown(data) {
     let license;
     if ((data.license in licenseIcons)) {
         license = licenseIcons[data.license];
-    } 
+    }
     return `# ${data.title} ${license}
   
-  ## Contents
+  ## Table of Contents
   * [Description](#Description)
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -38,11 +38,11 @@ function generateMarkdown(data) {
   ${data.license}
 
   ## Contributing
-  ${data.contribution}
+  ${data.contributing}
   
   ## Questions
   [GitHub](https://github.com/${data.github})
-  [Contact](${data.email})
+  [Contact](mailto:${data.email})
   `;
 }
 
