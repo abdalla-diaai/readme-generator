@@ -6,7 +6,7 @@ A simple application to automatically generate a professional README file for Gi
 
 ## Installation
 
-The application requires access to any command line terminal, Node.js® and inquirer package. More information on Node.js® can be found [HERE](https://nodejs.org/en) and on inquirer can be found [HERE](https://www.npmjs.com/package/inquirer). Make sure to create a package.json with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies. 
+The application requires access to any command line terminal, Node.js® and inquirer package. More information on Node.js® can be found [HERE](https://nodejs.org/en) and on inquirer can be found [HERE](https://www.npmjs.com/package/inquirer). Make sure to create a package.json with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies. This application uses an older version of Inquirer package; version 6.5.0.
 
 ## Usage
 
