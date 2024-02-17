@@ -33,11 +33,12 @@ function generateMarkdown(data) {
   ## License
   ${data.license}
 
-  ## Contribution
+  ## Contributing
   ${data.contribution}
   
   ## Questions
-  [Link to GitHub](${data.questions})
+  [GitHub](${data.github})
+  [Contact](${data.email})
   `;
 }
 

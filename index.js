@@ -35,7 +35,7 @@ const questions = [
         message: 'Choose License: ',
         name: 'license',
         choices: ['MIT', 'GPL', 'Apache-2.0', '0BSD', 'MPL-2.0', 'LGPL', 'EPL-2.0', 'Artistic-2.0']
-      },
+    },
     {
         type: 'input',
         name: 'contribution',
@@ -48,28 +48,34 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'GitHub Repository Link: ',
+        name: 'github',
+        message: 'GitHub Username: '
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Email: '
+        
     },
 ];
-   
+
 
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    // TODO: Describe how this ternary operator works
-    err ? console.error(err) : console.log('File created!')
-);
+        // TODO: Describe how this ternary operator works
+        err ? console.error(err) : console.log('File created!')
+    );
 };
 
 // function to initialize program
 function init() {
     inquirer
-    .prompt(questions)
-    .then((data) => {
-        const makeMD = generateMarkdown(data)
-        writeToFile('exampleREADME.md', makeMD )
-    });
+        .prompt(questions)
+        .then((data) => {
+            const makeMD = generateMarkdown(data)
+            writeToFile('exampleREADME.md', makeMD)
+        });
 }
 
 // function call to initialize program
