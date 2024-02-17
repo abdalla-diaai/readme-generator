@@ -74,7 +74,7 @@ function init() {
     ])
     .then((data) => {
         const convert = generateMarkdown(data)
-        writeToFile('readmeGenerator.md', convert)
+        writeToFile('readmeGenerator.md', convert )
     });
 }
 
