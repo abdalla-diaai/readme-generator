@@ -5,14 +5,52 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
-'What is the title of the project?',
-'What is the Description of the project?',
-'How to install the project?',
-'How to use the project?',
-'What kind of licence to use?',
-'Are there any contributors?',
-'Are there any tests?',
-'Get in touch?' 
+    {
+        type: 'input',
+        name: 'welcome',
+        message: 'Welcome to Automated README Generator. You will be presented with several prompts to enter the project title, description, installation, usage, contributors, license, testing, and finally GitHub Repository Link. Press Enter to continue ...',
+    },
+    {
+        type: 'input',
+        name: 'title',
+        message: 'Title: ',
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Description: ',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Installation: '
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Usage: ',
+    },
+    {
+        type: 'checkbox',
+        message: 'Choose License: ',
+        name: 'license',
+        choices: ['MIT', 'GPL', 'Apache-2.0', '0BSD', 'MPL-2.0', 'LGPL', 'EPL-2.0', 'Artistic-2.0']
+      },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'Contributors: ',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Unit Testing: ',
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'GitHub Repository Link: ',
+    },
 ];
    
 
@@ -27,49 +65,9 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer
-    .prompt([
-        {
-            type: 'input',
-            name: 'title',
-            message: questions[0],
-        },
-        {
-            type: 'input',
-            name: 'description',
-            message:  questions[1],
-        },
-        {
-            type: 'input',
-            name: 'installation',
-            message:  questions[2]
-        },
-        {
-            type: 'input',
-            name: 'usage',
-            message:  questions[3],
-        },
-        {
-            type: 'checkbox',
-            message:  questions[4],
-            name: 'license',
-            choices: ['MIT', 'GPL', 'Apache-2.0', '0BSD', 'MPL-2.0', 'LGPL', 'EPL-2.0', 'Artistic-2.0']
-          },
-        {
-            type: 'input',
-            name: 'contribution',
-            message:  questions[5],
-        },
-        {
-            type: 'input',
-            name: 'test',
-            message:  questions[6],
-        },
-        {
-            type: 'input',
-            name: 'questions',
-            message:  questions[7],
-        },
-    ])
+    .prompt(
+        
+        questions)
     .then((data) => {
         const convert = generateMarkdown(data)
         writeToFile('readmeGenerator.md', convert )

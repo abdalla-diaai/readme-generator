@@ -23,14 +23,19 @@ function generateMarkdown(data) {
 
   ## Description 
   ${data.description}
+
   ## Installation
   ${data.installation}
+
   ## Usage
   ${data.usage}
+
   ## License
   ${data.license}
+
   ## Contribution
   ${data.contribution}
+  
   ## Questions
   [Link to GitHub](${data.questions})
   `;
