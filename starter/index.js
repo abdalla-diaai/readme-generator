@@ -14,8 +14,21 @@ const questions = [
 'Are there any tests?',
 'Get in touch?' 
 ];
+   
 
-inquirer
+
+
+// function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    // TODO: Describe how this ternary operator works
+    err ? console.error(err) : console.log('File created!')
+);
+}
+
+// function to initialize program
+function init() {
+    inquirer
     .prompt([
         {
             type: 'input',
@@ -60,20 +73,9 @@ inquirer
         },
     ])
     .then((data) => {
-        console.log(data);
+        const convert = generateMarkdown(data)
+        writeToFile('readmeGenerator.md', convert)
     });
-
-
-// function to write README file
-function writeToFile(fileName, data) {
-
-
-
-}
-
-// function to initialize program
-function init() {
-
 }
 
 // function call to initialize program
