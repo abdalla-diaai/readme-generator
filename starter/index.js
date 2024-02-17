@@ -7,6 +7,11 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: 'input',
+        name: 'welcome',
+        message: 'Welcome to Automated README Generator. You will be presented with several prompts to enter the project title, description, installation, usage, contributors, license, testing, and finally GitHub Repository Link. Press Enter to continue ...',
+    },
+    {
+        type: 'input',
         name: 'title',
         message: 'Title: ',
     },
@@ -60,7 +65,9 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer
-    .prompt(questions)
+    .prompt(
+        
+        questions)
     .then((data) => {
         const convert = generateMarkdown(data)
         writeToFile('readmeGenerator.md', convert )
