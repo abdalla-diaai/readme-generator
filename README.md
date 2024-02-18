@@ -13,10 +13,11 @@ The application requires access to any command line terminal, Node.js® and inqu
 Simply download the git repository from this [LINK](https://github.com/abdalla-diaai/readme-generator) on your local computer. Make sure you are inside the folder containing index.js file. Open your terminal either standalone or inside any IDE. Then type node index.js. Press enter then you will presented with a series of prompts about your project. Press enter after each prompt to move to the next prompt. If the process is successfull a success file created message will show in the terminal. Then the file will be saved to the same folder.
 
 ### [DEMO LINK](https://youtu.be/nZ3gIL9lhOI)
+### [LINK to README file in video demo](exampleREADME.md)
 
 ### Possible Issues
 
-Links to internal sections works only in normal mode not preview mode.
+Links to internal sections works only in normal mode not preview mode when viewed in VScode but works normally in GitHub.
 
 ## Credit
 
