@@ -25,8 +25,8 @@
   
   ## Questions
 
-   Check my GitHub profile or get in touch by clicking on contact link below to send me an email. 
-   
+Check my GitHub profile or get in touch if you have any questions by clicking on contact link below to send me an email.  
+
   [GitHub](https://github.com/abdalla-diaai)
   
   [Contact](mailto:abdalla.diaai@outlook.com)
