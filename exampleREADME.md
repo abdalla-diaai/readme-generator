@@ -24,6 +24,9 @@
   Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow. NOTE: Be sure to merge the latest from "upstream" before making a pull request!
   
   ## Questions
+
+   Check my GitHub profile or get in touch by clicking on contact link below to send me an email. 
+   
   [GitHub](https://github.com/abdalla-diaai)
   
   [Contact](mailto:abdalla.diaai@outlook.com)

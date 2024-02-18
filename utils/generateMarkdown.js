@@ -41,6 +41,8 @@ function generateMarkdown(data) {
   ${data.contributing}
   
   ## Questions
+  Check my GitHub profile or get in touch by clicking on contact link below to send me an email. 
+  
   [GitHub Profile](https://github.com/${data.github})
 
   [Contact Email](mailto:${data.email})
