@@ -14,6 +14,10 @@ function generateMarkdown(data) {
     let license;
     if ((data.license in licenseIcons)) {
         license = licenseIcons[data.license];
+    } else if (data.license === ' '){
+        license = 'Not Available';
+    } else {
+        license = data.license;
     }
     return `# ${data.title} ${license}
   
@@ -35,7 +39,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${data.license}
+  ${license}
 
   ## Contributing
   ${data.contributing}

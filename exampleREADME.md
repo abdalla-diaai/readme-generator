@@ -15,19 +15,18 @@
   The application requires access to terminal (command line), Node.js and Inquirer package. Make sure to create packages.json file when you run the application for the first time. Simply run `npm init` in your terminal and press enter. More information on node can be found [HERE](https://nodejs.org/en) and on inquirer can be found [HERE](https://www.npmjs.com/package/inquirer).
 
   ## Usage
-  Simply download the git repository from this [LINK](https://github.com/abdalla-diaai/readme-generator) on your local computer. Make sure you are inside the folder that contains index.js file.  
+  Simply download the git repository from this [LINK](https://github.com/abdalla-diaai/readme-generator) on your local computer. Make sure you are inside the folder that contains index.js file. 
 
   ## License
-  MIT
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Contributing
-  Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow. NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+   Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow. NOTE: Be sure to merge the latest from "upstream" before making a pull request!
   
   ## Questions
+  Check my GitHub profile or get in touch if you have any questions by clicking on contact link below to send me an email. 
 
-Check my GitHub profile or get in touch if you have any questions by clicking on contact link below to send me an email.  
+  [GitHub Profile](https://github.com/abdalla-diaai)
 
-  [GitHub](https://github.com/abdalla-diaai)
-  
-  [Contact](mailto:abdalla.diaai@outlook.com)
+  [Contact Email](mailto:abdalla.diaai@outlook.com)
   
