@@ -57,6 +57,12 @@ const questions = [
         message: 'Email: '
         
     },
+    {
+        type: 'input',
+        name: 'fileName',
+        message: 'File Name: '
+        
+    },
 ];
 
 
@@ -74,7 +80,7 @@ function init() {
         .prompt(questions)
         .then((data) => {
             const makeMD = generateMarkdown(data)
-            writeToFile('exampleREADME.md', makeMD)
+            writeToFile(`${data.fileName}.md`, makeMD);
         });
 }
 
